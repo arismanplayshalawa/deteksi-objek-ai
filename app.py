@@ -21,7 +21,7 @@ import base64
 # ============================================
 
 st.set_page_config(
-    page_title="Deteksi Objek AI Canggih",
+    page_title="Deteksi Objek Gambar, Buah, Hewan dan Benda Praktis",
     page_icon="🎯",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -194,8 +194,8 @@ def get_class_list():
 
 def halaman_login():
     st.markdown("""
-    <h1 style='text-align:center; color:#667eea;'>🎯 DETEKSI OBJEK AI</h1>
-    <p style='text-align:center;'>Sistem Deteksi Objek Cerdas dengan AI</p>
+    <h1 style='text-align:center; color:#667eea;'>🎯 DETEKSI OBJEK GAMBAR, BUAH, HEWAN DAN BENDA PRAKTIS</h1>
+    <p style='text-align:center;'>Sistem Deteksi Objek Cerdas dengan AI - Deteksi berbagai objek, buah, hewan, dan benda</p>
     <hr>
     """, unsafe_allow_html=True)
     
@@ -364,7 +364,7 @@ def halaman_dashboard():
 
 def halaman_deteksi():
     st.markdown("## 🎯 DETEKSI OBJEK")
-    st.markdown("Upload gambar atau gunakan webcam untuk mendeteksi objek")
+    st.markdown("Upload gambar atau gunakan webcam untuk mendeteksi objek, buah, hewan, dan benda lainnya")
     
     # Sidebar settings untuk deteksi
     with st.sidebar:
@@ -543,10 +543,10 @@ def sidebar():
         # Informasi
         with st.expander("ℹ️ Tentang Aplikasi"):
             st.markdown("""
-            **Deteksi Objek AI Canggih**
+            **Deteksi Objek Gambar, Buah, Hewan dan Benda Praktis**
             
-            - Model: YOLOv8
-            - Dataset: COCO (80 kelas)
+            - Model: YOLOv8 (80 kelas objek)
+            - Dataset: COCO (termasuk person, hewan, buah, kendaraan, dll)
             - Real-time detection
             - Export data & visualisasi
             """)
@@ -578,8 +578,8 @@ def main():
         
         st.markdown("""
         <div style='background:linear-gradient(135deg,#667eea,#764ba2); padding:20px; border-radius:10px; color:white; text-align:center; margin-bottom:20px'>
-            <h1>🎯 DETEKSI OBJEK AI</h1>
-            <p>Sistem Deteksi Objek Cerdas dengan AI - Support Multi Model & Live Camera</p>
+            <h1>🎯 DETEKSI OBJEK GAMBAR, BUAH, HEWAN DAN BENDA PRAKTIS</h1>
+            <p>Sistem Deteksi Objek Cerdas dengan AI - Deteksi berbagai objek, buah, hewan, dan benda secara praktis</p>
         </div>
         """, unsafe_allow_html=True)
         
